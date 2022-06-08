@@ -405,6 +405,7 @@ main{
         position: relative;
         overflow: hidden;
         &:hover{
+            cursor: pointer;
             .icone-check--nav{
                 max-width: 10%;
                 #check{

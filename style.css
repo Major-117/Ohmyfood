@@ -324,6 +324,10 @@ main img {
   overflow: hidden;
 }
 
+.nav-lapalette .menu-carte--nav:hover {
+  cursor: pointer;
+}
+
 .nav-lapalette .menu-carte--nav:hover .icone-check--nav {
   max-width: 10%;
 }
