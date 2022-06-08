@@ -1,0 +1,24 @@
+@media all and (max-width: 767px) /* Version Mobile */
+{
+    body
+    {
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+
+    .logo
+    {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        margin-top: 30px;
+    }
+
+
+
+    
+
+
+
+}
