@@ -213,6 +213,40 @@ aside .paragraphe--div--aside .bontonX {
      object-fit: cover;
 }
 
+.carte-plat--main #coeur {
+  position: absolute;
+  right: 30px;
+  font-size: 30px;
+}
+
+.carte-plat--main #coeur #coeur-vide {
+  position: absolute;
+}
+
+.carte-plat--main #coeur #coeur-plein {
+  position: absolute;
+  opacity: 0;
+  background: -webkit-linear-gradient(0deg, #aa2dfd 0%, #db077d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.carte-plat--main #coeur:hover {
+  cursor: pointer;
+}
+
+.carte-plat--main #coeur:hover #coeur-plein {
+  opacity: 1;
+}
+
+.carte-plat--main #coeur:hover #coeur-vide {
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
 footer {
   background-color: #353535;
   color: white;
@@ -305,8 +339,36 @@ main img {
 
 .nav-lapalette .titre-menu--nav #coeur {
   position: absolute;
-  right: 50px;
+  right: 80px;
   font-size: 30px;
+}
+
+.nav-lapalette .titre-menu--nav #coeur #coeur-vide {
+  position: absolute;
+}
+
+.nav-lapalette .titre-menu--nav #coeur #coeur-plein {
+  position: absolute;
+  opacity: 0;
+  background: -webkit-linear-gradient(0deg, #aa2dfd 0%, #db077d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.nav-lapalette .titre-menu--nav #coeur:hover {
+  cursor: pointer;
+}
+
+.nav-lapalette .titre-menu--nav #coeur:hover #coeur-plein {
+  opacity: 1;
+}
+
+.nav-lapalette .titre-menu--nav #coeur:hover #coeur-vide {
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
 }
 
 .nav-lapalette .menu-carte--nav {
