@@ -214,7 +214,7 @@ aside .paragraphe--div--aside .bontonX {
 }
 
 .carte-plat--main #coeur {
-  position: absolute;
+  position: relative;
   right: 30px;
   font-size: 30px;
 }
@@ -519,13 +519,15 @@ main img {
     width: 15%;
   }
   body .paragraphe--div--aside .bontonX {
-    width: 40%;
-    display: none;
+    width: 20%;
+    position: absolute;
+    left: 40%;
+    top: 100%;
   }
   body .fonction h2 {
     display: none;
   }
-  body .fonction .fonctionnemnt {
+  body .fonctionnemnt {
     margin-top: -120px;
     width: 100%;
     display: -webkit-box;
@@ -535,7 +537,7 @@ main img {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  body .fonction .fonctionnemnt .choisissez {
+  body .fonctionnemnt .choisissez {
     width: 50%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -547,7 +549,7 @@ main img {
     transition: transform 500ms;
     transition: transform 500ms, -webkit-transform 500ms;
   }
-  body .fonction .fonctionnemnt .choisissez:hover {
+  body .fonctionnemnt .choisissez:hover {
     -webkit-transform: scale(1.02);
             transform: scale(1.02);
     -webkit-box-shadow: 10px 10px 50px 12px rgba(208, 83, 216, 0.49);
@@ -556,6 +558,58 @@ main img {
     transition: -webkit-box-shadow 400ms;
     transition: box-shadow 400ms;
     transition: box-shadow 400ms, -webkit-box-shadow 400ms;
+    -webkit-transition: -webkit-transform 500ms;
+    transition: -webkit-transform 500ms;
+    transition: transform 500ms;
+    transition: transform 500ms, -webkit-transform 500ms;
+  }
+  body .carte-global {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 25px;
+    background: none;
+    margin-top: 40px;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body .carte-global h2 {
+    display: none;
+  }
+  body .carte-global .carte-plat--main {
+    width: 30rem;
+    box-shadow: -1px -1px 16px -1px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: -1px -1px 16px -1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: -1px -1px 16px -1px rgba(0, 0, 0, 0.15);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: -webkit-transform 1000ms;
+    transition: -webkit-transform 1000ms;
+    transition: transform 1000ms;
+    transition: transform 1000ms, -webkit-transform 1000ms;
+  }
+  body .carte-global .carte-plat--main:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+    -webkit-box-shadow: 10px 10px 50px 12px rgba(208, 83, 216, 0.49);
+    box-shadow: 10px 10px 50px 12px rgba(208, 83, 216, 0.49);
+    -webkit-transition: -webkit-box-shadow 400ms;
+    transition: -webkit-box-shadow 400ms;
+    transition: box-shadow 400ms;
+    transition: box-shadow 400ms, -webkit-box-shadow 400ms;
+    -webkit-transition: -webkit-transform 500ms;
+    transition: -webkit-transform 500ms;
+    transition: transform 500ms;
+    transition: transform 500ms, -webkit-transform 500ms;
+  }
+  body footer {
+    margin-top: 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */
