@@ -94,6 +94,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     margin: auto;
+    position: relative;
 }
 
 header{
@@ -332,11 +333,9 @@ footer{
         
             #item-footer{
                 font-size:13px;
-                width: 1.7%;
+                width: 1.3rem;
                 
             }
-        
-        
         }
 
         
@@ -360,6 +359,7 @@ header{
         display: flex;
         flex-direction: row;
         align-items: center;
+        height: 70px;
 
         #arrow-left{
             color: #353535;
@@ -373,7 +373,7 @@ header{
 
 
         img{
-            width: 40%;
+            width: 12%;
             margin: auto;
             display: flex;
             padding: 15px;
@@ -384,7 +384,11 @@ header{
 
 main{
     img{
+        
         width: 100%;
+        height: 500px;
+        object-fit: cover;
+        
         
     }
 }
@@ -392,6 +396,11 @@ main{
 
 .nav-lapalette{
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(20%);
+    width: 70%;
     margin-top: -63px;
     z-index: 1;
     position: relative;
@@ -536,13 +545,6 @@ main{
     
     }
 
-
-
-
-
-    .menu-carte--nav:hover{
-        
-    }
     
     .Bouton-palette--div{
         
@@ -581,9 +583,8 @@ main{
                 width: 20%;
                 position: absolute;
                 left: 40%;
-                top: 96%;
-
-                
+                top: 100%;
+                transform: translateY(calc(-170px - 100% - 2rem));
             }
         }
 
@@ -610,8 +611,8 @@ main{
                 &:hover{
 
                     transform: scale(1.02);
-                    -webkit-box-shadow: 10px 10px 50px 12px rgba(208,83,216,0.49); 
-                    box-shadow: 10px 10px 50px 12px rgba(208,83,216,0.49);
+                    -webkit-box-shadow: 5px 5px 10px 5px rgba(208,83,216,0.49); 
+                    box-shadow: 0px 0px 10px 5px rgba(208,83,216,0.49);
                     transition: box-shadow 400ms;
                     transition: transform 500ms;
                     
@@ -644,8 +645,8 @@ main{
 
                 &:hover{
                     transform: scale(1.02);
-                    -webkit-box-shadow: 10px 10px 50px 12px rgba(208,83,216,0.49); 
-                    box-shadow: 10px 10px 50px 12px rgba(208,83,216,0.49);
+                    -webkit-box-shadow: 5px 5px 10px 5px rgba(208,83,216,0.49); 
+                    box-shadow: 0px 0px 10px 5px rgba(208,83,216,0.49);
                     transition: box-shadow 400ms;
                     transition: transform 500ms;
                 }
@@ -655,6 +656,10 @@ main{
     
         footer{
         margin-top: 100px;
+        
+           fonter > .li{
+            text-decoration: none;
+           }
 
         }
 
