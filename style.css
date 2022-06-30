@@ -266,6 +266,11 @@ footer .text--footer li #item-footer {
   width: 1.3rem;
 }
 
+footer .text--footer a {
+  color: white;
+  text-decoration: none;
+}
+
 footer img {
   height: 20px;
   margin-left: 40px;
@@ -322,8 +327,8 @@ main img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transform: translateX(20%);
-          transform: translateX(20%);
+  margin-left: auto;
+  margin-right: auto;
   width: 70%;
   margin-top: -63px;
   z-index: 1;
@@ -359,7 +364,7 @@ main img {
 }
 
 .nav-lapalette .titre-menu--nav #coeur {
-  position: relative;
+  width: 2rem;
   font-size: 30px;
   height: 2rem;
   right: 50px;
@@ -406,6 +411,11 @@ main img {
   -o-border-radius: 15px;
   position: relative;
   overflow: hidden;
+  --delaiAnim: 1s;
+  --decalage: 0.2s;
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 .nav-lapalette .menu-carte--nav:hover {
@@ -489,6 +499,82 @@ main img {
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
   color: white;
+}
+
+.nav-lapalette .menu-carte--nav-1 {
+  -webkit-animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * 1) forwards;
+          animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * 1) forwards;
+}
+
+.nav-lapalette .menu-carte--nav-2 {
+  -webkit-animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * 2) forwards;
+          animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * 2) forwards;
+}
+
+.nav-lapalette .menu-carte--nav-3 {
+  -webkit-animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * 3) forwards;
+          animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * 3) forwards;
+}
+
+.nav-lapalette .menu-carte--nav-4 {
+  -webkit-animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * 4) forwards;
+          animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * 4) forwards;
+}
+
+.nav-lapalette .menu-carte--nav-5 {
+  -webkit-animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * 5) forwards;
+          animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * 5) forwards;
+}
+
+.nav-lapalette .menu-carte--nav-6 {
+  -webkit-animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * 6) forwards;
+          animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * 6) forwards;
+}
+
+.nav-lapalette .menu-carte--nav-7 {
+  -webkit-animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * 7) forwards;
+          animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * 7) forwards;
+}
+
+.nav-lapalette .menu-carte--nav-8 {
+  -webkit-animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * 8) forwards;
+          animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * 8) forwards;
+}
+
+.nav-lapalette .menu-carte--nav-9 {
+  -webkit-animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * 9) forwards;
+          animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * 9) forwards;
+}
+
+.nav-lapalette .menu-carte--nav-10 {
+  -webkit-animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * 10) forwards;
+          animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * 10) forwards;
+}
+
+@-webkit-keyframes apparitionMenuCarteNav {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes apparitionMenuCarteNav {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
 }
 
 .nav-lapalette .Bouton-palette--div {
@@ -635,9 +721,6 @@ main img {
   body footer {
     margin-top: 100px;
   }
-  body footer .email {
-    color: white;
-  }
 }
 
 @media all and (min-width: 1030px) {
@@ -741,220 +824,6 @@ main img {
   }
   body footer .email {
     color: white;
-  }
-}
-
-.menu-carte--nav {
-  --delaiAnim: 1s;
-  --decalage: 0.2s;
-  opacity: 0;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-}
-
-.menu-carte--nav-1 {
-  -webkit-animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
-          animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
-}
-
-@-webkit-keyframes apparitionMenuCarteNav {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-
-@keyframes apparitionMenuCarteNav {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-
-.menu-carte--nav-2 {
-  -webkit-animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
-          animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
-}
-
-@keyframes apparitionMenuCarteNav {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-
-.menu-carte--nav-3 {
-  -webkit-animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
-          animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
-}
-
-@keyframes apparitionMenuCarteNav {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-
-.menu-carte--nav-4 {
-  -webkit-animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
-          animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
-}
-
-@keyframes apparitionMenuCarteNav {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-
-.menu-carte--nav-5 {
-  -webkit-animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
-          animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
-}
-
-@keyframes apparitionMenuCarteNav {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-
-.menu-carte--nav-6 {
-  -webkit-animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
-          animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
-}
-
-@keyframes apparitionMenuCarteNav {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-
-.menu-carte--nav-7 {
-  -webkit-animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
-          animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
-}
-
-@keyframes apparitionMenuCarteNav {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-
-.menu-carte--nav-8 {
-  -webkit-animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
-          animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
-}
-
-@keyframes apparitionMenuCarteNav {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-
-.menu-carte--nav-9 {
-  -webkit-animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
-          animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
-}
-
-@keyframes apparitionMenuCarteNav {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-
-.menu-carte--nav-10 {
-  -webkit-animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
-          animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
-}
-
-@keyframes apparitionMenuCarteNav {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-
-@keyframes apparitionMenuCarteNav {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
   }
 }
 /*# sourceMappingURL=style.css.map */

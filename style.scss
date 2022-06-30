@@ -334,8 +334,14 @@ footer{
             #item-footer{
                 font-size:13px;
                 width: 1.3rem;
+
                 
             }
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
         }
 
     }
@@ -396,7 +402,8 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transform: translateX(20%);
+    margin-left: auto;
+    margin-right: auto;
     width: 70%;
     margin-top: -63px;
     z-index: 1;
@@ -421,7 +428,7 @@ main{
         justify-content: space-between;
     
         #coeur{
-            position: relative;
+            width: 2rem;
             font-size: 30px;
             height: 2rem;
             right: 50px;
@@ -470,6 +477,11 @@ main{
         -o-border-radius: 15px ;
         position: relative;
         overflow: hidden;
+        --delaiAnim: 1s;
+        --decalage: 0.2s;
+        opacity: 0;
+        transform: translateY(50%);
+
         
         &:hover{
             cursor: pointer;
@@ -539,17 +551,30 @@ main{
         
     }
 
-
-
+    @for $i from 1 through 10 {
+        .menu-carte--nav-#{$i} {
+            animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * #{$i}) forwards;
+        }
+    }
 
     
+    @keyframes apparitionMenuCarteNav {
+        0% {
+        opacity: 0;
+        transform: translateY(50%)
+        }
+    
+        100% {
+        opacity: 1;
+        transform: translateY(0%);
+        }
+    }
+
     .Bouton-palette--div{
         
         @include bouton;
         display: flex;
         justify-content: center;
-
-        
     }
 
 
@@ -654,12 +679,6 @@ main{
     
         footer{
          margin-top: 100px;
-
-         .email{
-            color: white;
-         }
-        
-
         }
 
 
@@ -773,54 +792,7 @@ main{
 
 
 
-.menu-carte--nav {
-    --delaiAnim: 1s;
-    --decalage: 0.2s;
-    opacity: 0;
-    transform: translateY(50%);
-
-}
-
-
-@for $i from 1 through 10 {
-    .menu-carte--nav-#{$i} {
-        animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
-    }
   
-
-    @keyframes apparitionMenuCarteNav {
-        0% {
-          opacity: 0;
-          transform: translateY(50%)
-        }
-      
-        100% {
-          opacity: 1;
-          transform: translateY(0%);
-        }
-      }
-    
-
-
-
-
-
-
-}
-  
-  
-  
-  @keyframes apparitionMenuCarteNav {
-    0% {
-      opacity: 0;
-      transform: translateY(50%)
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
 
 
 
