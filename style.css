@@ -757,9 +757,48 @@ main img {
           animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
 }
 
+@-webkit-keyframes apparitionMenuCarteNav {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes apparitionMenuCarteNav {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
 .menu-carte--nav-2 {
   -webkit-animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
           animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
+}
+
+@keyframes apparitionMenuCarteNav {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
 }
 
 .menu-carte--nav-3 {
@@ -767,9 +806,35 @@ main img {
           animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
 }
 
+@keyframes apparitionMenuCarteNav {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
 .menu-carte--nav-4 {
   -webkit-animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
           animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
+}
+
+@keyframes apparitionMenuCarteNav {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
 }
 
 .menu-carte--nav-5 {
@@ -777,9 +842,35 @@ main img {
           animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
 }
 
+@keyframes apparitionMenuCarteNav {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
 .menu-carte--nav-6 {
   -webkit-animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
           animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
+}
+
+@keyframes apparitionMenuCarteNav {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
 }
 
 .menu-carte--nav-7 {
@@ -787,9 +878,35 @@ main img {
           animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
 }
 
+@keyframes apparitionMenuCarteNav {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
 .menu-carte--nav-8 {
   -webkit-animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
           animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
+}
+
+@keyframes apparitionMenuCarteNav {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
 }
 
 .menu-carte--nav-9 {
@@ -797,12 +914,25 @@ main img {
           animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
 }
 
+@keyframes apparitionMenuCarteNav {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
 .menu-carte--nav-10 {
   -webkit-animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
           animation: apparitionMenuCarteNav var(--delaiAnim) calc(var(--decalage) * $i) forwards;
 }
 
-@-webkit-keyframes apparitionMenuCarteNav {
+@keyframes apparitionMenuCarteNav {
   0% {
     opacity: 0;
     -webkit-transform: translateY(50%);
