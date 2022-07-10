@@ -1,8 +1,115 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
   font-family: 'Roboto', sans-serif;
   margin: auto;
   position: relative;
+}
+
+body .loding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Shrikhand', cursive;
+  z-index: 1;
+  position: absolute;
+  overflow: scroll;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  -webkit-animation: animateOpacity 3s linear forwards;
+          animation: animateOpacity 3s linear forwards;
+  pointer-events: none;
+}
+
+body .loding h2 {
+  position: relative;
+  margin-top: -10%;
+  font-size: 50px;
+  color: white;
+  -webkit-text-stroke: 0.1vw black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .loding h2::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  -webkit-text-stroke: 0.1vw black;
+  background: -webkit-gradient(linear, left top, right top, color-stop(25%, #9356dc), color-stop(47%, #ff79da), color-stop(87%, #99e2d0));
+  background: linear-gradient(90deg, #9356dc 25%, #ff79da 47%, #99e2d0 87%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  overflow: hidden;
+  -webkit-animation: animate 3s linear infinite;
+          animation: animate 3s linear infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@-webkit-keyframes animate {
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes animate {
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes animateOpacity {
+  0% {
+    opacity: 1;
+    overflow: hidden;
+  }
+  95% {
+    opacity: 1;
+    overflow: hidden;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animateOpacity {
+  0% {
+    opacity: 1;
+    overflow: hidden;
+  }
+  95% {
+    opacity: 1;
+    overflow: hidden;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 header .logo {
@@ -244,8 +351,8 @@ aside .paragraphe--div--aside .bontonX {
 
 .carte-plat--main #coeur:hover #coeur-vide {
   opacity: 0;
-  -webkit-transition: opacity 500ms;
-  transition: opacity 500ms;
+  -webkit-transition: opacity 1000ms;
+  transition: opacity 1000ms;
 }
 
 footer {
@@ -331,7 +438,7 @@ main img {
   margin-right: auto;
   width: 70%;
   margin-top: -63px;
-  z-index: 1;
+  z-index: 0;
   position: relative;
   padding: 20px;
   background-color: transparent;
