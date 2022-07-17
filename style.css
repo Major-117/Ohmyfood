@@ -4,6 +4,32 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: auto;
   position: relative;
+  -webkit-animation: overflowBody 3s linear forwards;
+          animation: overflowBody 3s linear forwards;
+}
+
+@-webkit-keyframes overflowBody {
+  0% {
+    overflow: hidden;
+  }
+  99.99% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: auto;
+  }
+}
+
+@keyframes overflowBody {
+  0% {
+    overflow: hidden;
+  }
+  99.99% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: auto;
+  }
 }
 
 body .loding {
@@ -25,14 +51,12 @@ body .loding {
   font-family: 'Shrikhand', cursive;
   z-index: 1;
   position: absolute;
-  overflow: scroll;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   -webkit-animation: animateOpacity 3s linear forwards;
           animation: animateOpacity 3s linear forwards;
-  pointer-events: none;
 }
 
 body .loding h2 {
@@ -87,28 +111,30 @@ body .loding h2::before {
 @-webkit-keyframes animateOpacity {
   0% {
     opacity: 1;
-    overflow: hidden;
+    pointer-events: initial;
   }
   95% {
     opacity: 1;
-    overflow: hidden;
+    pointer-events: initial;
   }
   100% {
     opacity: 0;
+    pointer-events: none;
   }
 }
 
 @keyframes animateOpacity {
   0% {
     opacity: 1;
-    overflow: hidden;
+    pointer-events: initial;
   }
   95% {
     opacity: 1;
-    overflow: hidden;
+    pointer-events: initial;
   }
   100% {
     opacity: 0;
+    pointer-events: none;
   }
 }
 
