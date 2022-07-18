@@ -199,7 +199,7 @@ aside .paragraphe--div--aside .bontonX {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: bold;
   background: #9356dc;
   background: linear-gradient(353deg, #9356dc 12%, #ff79da 78%);
@@ -221,6 +221,10 @@ aside .paragraphe--div--aside .bontonX {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 35%;
+  min-width: 55%;
+  left: 22%;
+  position: relative;
 }
 
 .fonction h2 {
@@ -760,7 +764,8 @@ main img {
     width: 15%;
   }
   body .paragraphe--div--aside .bontonX {
-    width: 20%;
+    width: 10%;
+    min-width: 20%;
     position: absolute;
     left: 40%;
     top: 100%;
@@ -796,7 +801,7 @@ main img {
     -webkit-transform: scale(1.02);
             transform: scale(1.02);
     -webkit-box-shadow: 5px 5px 10px 5px rgba(208, 83, 216, 0.49);
-    box-shadow: 0px 0px 10px 5px rgba(208, 83, 216, 0.49);
+    box-shadow: 0px 0px 0px 1px rgba(208, 83, 216, 0.49);
     -webkit-transition: -webkit-box-shadow 400ms;
     transition: -webkit-box-shadow 400ms;
     transition: box-shadow 400ms;
@@ -862,6 +867,7 @@ main img {
   }
   body .paragraphe--div--aside .bontonX {
     width: 20%;
+    min-width: 20%;
     position: absolute;
     left: 40%;
     top: 100%;
@@ -897,7 +903,7 @@ main img {
     -webkit-transform: scale(1.02);
             transform: scale(1.02);
     -webkit-box-shadow: 5px 5px 10px 5px rgba(208, 83, 216, 0.49);
-    box-shadow: 0px 0px 10px 5px rgba(208, 83, 216, 0.49);
+    box-shadow: 0px 0px 1px 1px rgba(208, 83, 216, 0.49);
     -webkit-transition: -webkit-box-shadow 400ms;
     transition: -webkit-box-shadow 400ms;
     transition: box-shadow 400ms;
@@ -906,6 +912,7 @@ main img {
     transition: -webkit-transform 500ms;
     transition: transform 500ms;
     transition: transform 500ms, -webkit-transform 500ms;
+    background-color: white;
   }
   body .carte-global {
     display: -webkit-box;
@@ -942,7 +949,7 @@ main img {
     -webkit-transform: scale(1.02);
             transform: scale(1.02);
     -webkit-box-shadow: 5px 5px 10px 5px rgba(208, 83, 216, 0.49);
-    box-shadow: 0px 0px 10px 5px rgba(208, 83, 216, 0.49);
+    box-shadow: 0px 0px 1px 1px rgba(208, 83, 216, 0.49);
     -webkit-transition: -webkit-box-shadow 400ms;
     transition: -webkit-box-shadow 400ms;
     transition: box-shadow 400ms;
