@@ -758,7 +758,7 @@ main img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: bold;
   background: #9356dc;
   background: linear-gradient(353deg, #9356dc 12%, #ff79da 78%);
@@ -811,6 +811,14 @@ main img {
   }
   body .fonction h2 {
     display: none;
+  }
+  body .nav-lapalette {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .nav-lapalette .Bouton-palette--div {
+    width: 100%;
   }
   body .fonctionnemnt {
     margin-top: -120px;
@@ -914,7 +922,10 @@ main img {
             transform: translateY(calc(-170px - 100% - 2rem));
   }
   body .nav-lapalette {
-    padding-bottom: 4rem;
+    padding-bottom: 1rem;
+  }
+  body .nav-lapalette .Bouton-palette--div input {
+    width: 30%;
   }
   body .fonction h2 {
     display: none;

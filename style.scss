@@ -65,7 +65,7 @@ $delay: 3s;
 
     .BoutonX{
         display: flex;
-        font-size: 10px;
+        font-size: 13px;
         font-weight: bold;
         background: rgb(147,86,220);
         background: linear-gradient(353deg, rgba(147,86,220,1) 12%, rgba(255,121,218,1) 78%);
@@ -734,6 +734,16 @@ main{
                 display: none;
             }
         }
+
+        .nav-lapalette{
+                display: flex;
+                
+                
+            .Bouton-palette--div{
+                width: 100%;
+                
+            }
+        }
         
         .fonctionnemnt{
 
@@ -825,7 +835,15 @@ main{
         }
 
         .nav-lapalette{
-            padding-bottom: 4rem;
+            padding-bottom: 1rem;
+
+
+            .Bouton-palette--div{
+                
+                input{
+                    width: 30%;
+                }
+            }
         }
 
 
