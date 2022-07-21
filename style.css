@@ -139,12 +139,29 @@ body .loding h2::before {
 }
 
 header .logo {
-  width: 40%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 30px;
+  max-height: 50px;
+}
+
+header .logo1 {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  max-height: 50px;
+}
+
+header .logo1 {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 50px;
 }
 
 header .Lieux {
@@ -196,7 +213,7 @@ aside .paragraphe--div--aside p {
   text-align: center;
 }
 
-aside .paragraphe--div--aside .bontonX {
+aside .paragraphe--div--aside .BoutonX {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -304,7 +321,7 @@ aside .paragraphe--div--aside .bontonX {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
   background-color: #eaeaea;
   margin-top: 60px;
 }
@@ -318,6 +335,7 @@ aside .paragraphe--div--aside .bontonX {
   border-radius: 10px;
   background-color: #ffffff;
   margin: 10px;
+  position: relative;
 }
 
 .carte-plat--main a {
@@ -328,8 +346,9 @@ aside .paragraphe--div--aside .bontonX {
 .carte-plat--main a .new {
   color: #008766;
   position: absolute;
-  -webkit-transform: translateY(-160px);
-          transform: translateY(-160px);
+  top: 0.5rem;
+  margin: 0;
+  right: 0.5rem;
   background-color: #99e2d0;
   padding: 7px 10px 5px 10px;
   border-radius: 2px;
@@ -457,18 +476,9 @@ header .header--lapalette-html #arrow-left {
   left: 20px;
 }
 
-header .header--lapalette-html img {
-  width: 12%;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 15px;
-}
-
 main img {
   width: 100%;
-  height: 500px;
+  height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -498,7 +508,6 @@ main img {
   -moz-border-radius-topright: 40px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  padding-bottom: 4rem;
 }
 
 .nav-lapalette .titre-menu--nav {
@@ -745,7 +754,7 @@ main img {
   margin-bottom: 30px;
 }
 
-.nav-lapalette .Bouton-palette--div .bontonX {
+.nav-lapalette .Bouton-palette--div .BoutonX {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -786,10 +795,7 @@ main img {
 }
 
 @media all and (min-width: 1200px) {
-  body header .logo {
-    width: 40%;
-  }
-  body .paragraphe--div--aside .bontonX {
+  body .paragraphe--div--aside .BoutonX {
     width: 10%;
     min-width: 20%;
     position: absolute;
@@ -852,6 +858,7 @@ main img {
     gap: 25px;
     background: none;
     margin-top: 40px;
+    padding-bottom: 100px;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -887,16 +894,17 @@ main img {
     transition: transform 500ms;
     transition: transform 500ms, -webkit-transform 500ms;
   }
-  body footer {
-    margin-top: 100px;
-  }
 }
 
-@media all and (min-width: 992px) {
+@media all and (min-width: 992px) and (max-width: 1199px) {
   body header .logo {
-    width: 20%;
+    max-height: 50px;
   }
-  body .paragraphe--div--aside .bontonX {
+  body .paragraphe--div--aside {
+    height: 500px;
+    padding-bottom: 0;
+  }
+  body .paragraphe--div--aside .BoutonX {
     width: 20%;
     min-width: 20%;
     position: absolute;
@@ -906,14 +914,13 @@ main img {
             transform: translateY(calc(-170px - 100% - 2rem));
   }
   body .nav-lapalette {
-    width: 60%;
     padding-bottom: 4rem;
   }
   body .fonction h2 {
     display: none;
   }
   body .fonctionnemnt {
-    margin-top: -120px;
+    margin-top: -350px;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -921,6 +928,13 @@ main img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   body .fonctionnemnt .choisissez {
     width: 50%;
@@ -964,6 +978,7 @@ main img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    padding-bottom: 100px;
   }
   body .carte-global h2 {
     display: none;
