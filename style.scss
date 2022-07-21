@@ -57,7 +57,7 @@ $delay: 3s;
     }
 
     img{
-        height: 20px;
+        height: 10px;
         margin-left: 40px;
         margin-top: 25px;
         filter: invert(100%);
@@ -183,8 +183,7 @@ body{
             }
         }
      }
-
-}
+} 
 
 
 
@@ -216,6 +215,7 @@ aside{
         flex-direction: column;
         background: #f6f6f6;
         height: 270px;
+        padding-bottom: 2rem;
 
         h1{
             font-size: 30px;
@@ -272,7 +272,7 @@ aside{
         background-color: #f6f6f6;
         -webkit-box-shadow: 2px 0px 30px 0px rgba(0,0,0,0.3);
         -moz-box-shadow: 2px 0px 30px 0px rgba(0,0,0,0.3);
-        box-shadow: 2px 0px 30px 0px rgba(0,0,0,0.3);
+        box-shadow: 2px 0px 15px 0px rgba(0, 0, 0, 0.2);
         position: relative;
 
             p{
@@ -280,7 +280,7 @@ aside{
             }
 
         
-        #icon-style{
+        .icon-style{
 
             color: #7e7e7e;
             font-size: 15px;
@@ -307,6 +307,9 @@ aside{
     .choisissez:hover{
         background-color: #f5edff;
         cursor: pointer;
+        .icon-style {
+            color: #9356DC;
+          }
         
     }
 }
@@ -316,7 +319,7 @@ aside{
 
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     background-color: #eaeaea;
     margin-top: 60px;
 
@@ -336,6 +339,20 @@ aside{
 
         color: black;
         text-decoration: none;
+
+        .new {
+            color: #008766;
+            position: absolute;
+            transform:translateY(-160px);
+            background-color: #99e2d0;
+            padding: 7px 10px 5px 10px;
+            border-radius: 2px;
+            font-weight: bold;
+        }
+
+        .new-1{
+            display: none;
+        }
         
 
             & > div {
@@ -499,7 +516,6 @@ main{
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
     margin-top: -63px;
     z-index: 0;
     position: relative;
@@ -512,6 +528,7 @@ main{
     -moz-border-radius-topright: 40px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
+    padding-bottom: 4rem;
 
     .titre-menu--nav{
         font-family: 'Shrikhand', cursive;
@@ -670,6 +687,13 @@ main{
         @include bouton;
         display: flex;
         justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        
+        & input {
+            width: 50%;
+            
+          }
     }
 
 
@@ -692,7 +716,7 @@ main{
 
        header{
         .logo{
-            width: 15%;
+            width: 40%;
         }
        }
 
@@ -709,6 +733,8 @@ main{
         }
 
        .fonction{
+
+            display: flex;
 
             h2{
                 display: none;
@@ -784,13 +810,14 @@ main{
 }
 
 
-@media all and (min-width: 1030px){
+@media all and (min-width: 992px){
 
     body{
 
+
        header{
         .logo{
-            width: 15%;
+            width: 20%;
         }
        }
 
@@ -805,6 +832,12 @@ main{
                 transform: translateY(calc(-170px - 100% - 2rem));
             }
         }
+
+        .nav-lapalette{
+            width: 60%;
+            padding-bottom: 4rem;
+        }
+
 
        .fonction{
 
@@ -845,14 +878,12 @@ main{
             gap: 25px;
             background: none;
             margin-top: 40px;
-            
+            display: flex;
+            flex-direction: row;
             
             h2{
                 display: none;
             }
-
-            display: flex;
-            flex-direction: row;
 
             .carte-plat--main{
                 width: 30rem;
@@ -874,7 +905,6 @@ main{
         }
     
         footer{
-         margin-top: 100px;
 
          .email{
             color: white;
