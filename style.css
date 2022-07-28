@@ -6,7 +6,7 @@ body {
   position: relative;
 }
 
-body .Accueil {
+body.Accueil {
   -webkit-animation: overflowBody 3s linear forwards;
           animation: overflowBody 3s linear forwards;
 }
