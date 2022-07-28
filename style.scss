@@ -43,9 +43,9 @@ $delay: 3s;
             font-size: 14px;
             cursor: pointer;
         
-            #item-footer{
+            .item-footer{
                 font-size:13px;
-                width: 1.7%;
+                width: 1.3rem;
                 
             }
         }
@@ -93,7 +93,9 @@ body{
     margin: auto;
     position: relative;
     animation: overflowBody 3s linear forwards;
-    
+
+
+
     @keyframes overflowBody {
         0% {
             overflow: hidden;
@@ -385,7 +387,7 @@ aside{
                     }
                 }
                 
-            #coeur{
+            .coeur1{
                 color: #7e7e7e;
                 font-size: 25px;
                 margin-left: auto;
@@ -402,16 +404,16 @@ aside{
         }
     } 
     
-    #coeur{
+    .coeur1{
         position: relative;
         right: 30px;
         font-size: 30px;
 
-        & #coeur-vide{
+        & .coeur-vide{
             position: absolute;
         }
 
-        & #coeur-plein{
+        & .coeur-plein{
             position: absolute;
             opacity: 0;
             background: -webkit-linear-gradient(0deg, rgba(170,45,253,1) 0%, rgba(219,7,125,1) 100%);
@@ -423,11 +425,11 @@ aside{
         &:hover{
             cursor: pointer;
 
-            & #coeur-plein{
+            & .coeur-plein{
                 opacity: 1;
             }
 
-            & #coeur-vide{
+            & .coeur-vide{
                 opacity: 0;
                 transition: opacity 1000ms;
             }
@@ -455,7 +457,7 @@ footer{
             font-size: 14px;
             cursor: pointer;
         
-            #item-footer{
+            .item-footer{
                 font-size:13px;
                 width: 1.3rem;
 
@@ -542,18 +544,18 @@ main{
         margin-bottom: -30px;
         justify-content: space-between;
     
-        #coeur{
+        .coeur1{
             width: 2rem;
             font-size: 30px;
             height: 2rem;
             right: 50px;
 
 
-            & #coeur-vide{
+            & .coeur-vide{
                 position: absolute;
             }
 
-            & #coeur-plein{
+            & .coeur-plein{
                 position: absolute;
                 opacity: 0;
                 background: -webkit-linear-gradient(0deg, rgba(170,45,253,1) 0%, rgba(219,7,125,1) 100%);
@@ -565,11 +567,11 @@ main{
             &:hover{
                 cursor: pointer;
 
-                & #coeur-plein{
+                & .coeur-plein{
                     opacity: 1;
                 }
 
-                & #coeur-vide{
+                & .coeur-vide{
                     opacity: 0;
                     transition: opacity 500ms;
                 }
@@ -602,7 +604,7 @@ main{
             cursor: pointer;
             .icone-check--nav{
                 max-width: 10%;
-                #check{
+                .check{
                     transform: rotate(360deg);
                 }
             }
@@ -653,7 +655,7 @@ main{
             background-color:#99e2d0 ;
             overflow: hidden;
             transition: max-width 0.5s ;
-            #check{
+            .check{
                 transform: rotate(0deg);
                 transition: transform 0.5s;
                 color: white;
@@ -920,13 +922,8 @@ main{
          .email{
             color: white;
          }
-        
-
-        }
-
-
+       }
     }
-
 }
 
 

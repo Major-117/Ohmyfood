@@ -376,7 +376,7 @@ aside .paragraphe--div--aside .BoutonX {
   font-size: 15px;
 }
 
-.carte-plat--main a > div #coeur {
+.carte-plat--main a > div .coeur1 {
   color: #7e7e7e;
   font-size: 25px;
   margin-left: auto;
@@ -390,17 +390,17 @@ aside .paragraphe--div--aside .BoutonX {
      object-fit: cover;
 }
 
-.carte-plat--main #coeur {
+.carte-plat--main .coeur1 {
   position: relative;
   right: 30px;
   font-size: 30px;
 }
 
-.carte-plat--main #coeur #coeur-vide {
+.carte-plat--main .coeur1 .coeur-vide {
   position: absolute;
 }
 
-.carte-plat--main #coeur #coeur-plein {
+.carte-plat--main .coeur1 .coeur-plein {
   position: absolute;
   opacity: 0;
   background: -webkit-linear-gradient(0deg, #aa2dfd 0%, #db077d 100%);
@@ -410,15 +410,15 @@ aside .paragraphe--div--aside .BoutonX {
   transition: opacity 0.5s;
 }
 
-.carte-plat--main #coeur:hover {
+.carte-plat--main .coeur1:hover {
   cursor: pointer;
 }
 
-.carte-plat--main #coeur:hover #coeur-plein {
+.carte-plat--main .coeur1:hover .coeur-plein {
   opacity: 1;
 }
 
-.carte-plat--main #coeur:hover #coeur-vide {
+.carte-plat--main .coeur1:hover .coeur-vide {
   opacity: 0;
   -webkit-transition: opacity 1000ms;
   transition: opacity 1000ms;
@@ -437,7 +437,7 @@ footer .text--footer li {
   cursor: pointer;
 }
 
-footer .text--footer li #item-footer {
+footer .text--footer li .item-footer {
   font-size: 13px;
   width: 1.3rem;
 }
@@ -529,18 +529,18 @@ main img {
           justify-content: space-between;
 }
 
-.nav-lapalette .titre-menu--nav #coeur {
+.nav-lapalette .titre-menu--nav .coeur1 {
   width: 2rem;
   font-size: 30px;
   height: 2rem;
   right: 50px;
 }
 
-.nav-lapalette .titre-menu--nav #coeur #coeur-vide {
+.nav-lapalette .titre-menu--nav .coeur1 .coeur-vide {
   position: absolute;
 }
 
-.nav-lapalette .titre-menu--nav #coeur #coeur-plein {
+.nav-lapalette .titre-menu--nav .coeur1 .coeur-plein {
   position: absolute;
   opacity: 0;
   background: -webkit-linear-gradient(0deg, #aa2dfd 0%, #db077d 100%);
@@ -550,15 +550,15 @@ main img {
   transition: opacity 0.5s;
 }
 
-.nav-lapalette .titre-menu--nav #coeur:hover {
+.nav-lapalette .titre-menu--nav .coeur1:hover {
   cursor: pointer;
 }
 
-.nav-lapalette .titre-menu--nav #coeur:hover #coeur-plein {
+.nav-lapalette .titre-menu--nav .coeur1:hover .coeur-plein {
   opacity: 1;
 }
 
-.nav-lapalette .titre-menu--nav #coeur:hover #coeur-vide {
+.nav-lapalette .titre-menu--nav .coeur1:hover .coeur-vide {
   opacity: 0;
   -webkit-transition: opacity 500ms;
   transition: opacity 500ms;
@@ -592,7 +592,7 @@ main img {
   max-width: 10%;
 }
 
-.nav-lapalette .menu-carte--nav:hover .icone-check--nav #check {
+.nav-lapalette .menu-carte--nav:hover .icone-check--nav .check {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
@@ -657,7 +657,7 @@ main img {
   transition: max-width 0.5s;
 }
 
-.nav-lapalette .menu-carte--nav .icone-check--nav #check {
+.nav-lapalette .menu-carte--nav .icone-check--nav .check {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
   -webkit-transition: -webkit-transform 0.5s;
