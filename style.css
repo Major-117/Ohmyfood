@@ -4,6 +4,9 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: auto;
   position: relative;
+}
+
+body .Accueil {
   -webkit-animation: overflowBody 3s linear forwards;
           animation: overflowBody 3s linear forwards;
 }
@@ -208,7 +211,6 @@ aside .paragraphe--div--aside h1 {
 }
 
 aside .paragraphe--div--aside p {
-  padding-top: -15px;
   font-size: 20px;
   text-align: center;
 }
@@ -634,7 +636,7 @@ main img {
   background-color: white;
   padding: 7px;
   min-height: 100%;
-  font-weight: bol;
+  font-weight: bold;
 }
 
 .nav-lapalette .menu-carte--nav .icone-check--nav {
@@ -923,6 +925,16 @@ main img {
   }
   body .nav-lapalette {
     padding-bottom: 1rem;
+    max-width: 900px;
+  }
+  body .nav-lapalette .background-carte--nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 1rem;
   }
   body .nav-lapalette .Bouton-palette--div input {
     width: 30%;

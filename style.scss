@@ -92,7 +92,11 @@ body{
     font-family: 'Roboto', sans-serif;
     margin: auto;
     position: relative;
-    animation: overflowBody 3s linear forwards;
+   
+
+    .Accueil{
+         animation: overflowBody 3s linear forwards;
+    }
 
 
 
@@ -236,7 +240,6 @@ aside{
         }
 
         p{
-            padding-top: -15px;
             font-size: 20px;
             text-align: center;
         }
@@ -641,7 +644,7 @@ main{
             background-color: white;
             padding: 7px;
             min-height: 100%;
-            font-weight: bol;
+            font-weight: bold;
 
 
         }
@@ -663,9 +666,6 @@ main{
 
         }
     
-       
-    
-        
     }
 
     @for $i from 1 through 10 {
@@ -825,6 +825,8 @@ main{
        .paragraphe--div--aside{ 
         height: 500px;
         padding-bottom: 0;
+
+    
         
             .BoutonX{
                 width: 20%;
@@ -838,6 +840,13 @@ main{
 
         .nav-lapalette{
             padding-bottom: 1rem;
+            max-width: 900px;
+
+            .background-carte--nav{
+                display: flex;
+                justify-content: space-between;
+                gap: 1rem;
+            }
 
 
             .Bouton-palette--div{
